@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/styles/index.css">
+        <title>Undangan Tema Wayang</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#2F2020",
+                            secondary1: "#FDED97",
+                            secondary2: "#FABA5E",
+                            error: "#EF2206",
+                            success: "#EFAE06",
+                            warning: "#06DB41",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body>
+        <div class="w-screen h-screen max-h-screen m-0 overflow-hidden bg-primary">
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180" />
+            
+            <div class="mx-auto w-max pt-16">
+                <img src="./assets/img/wayang.svg" alt="logo" />
+            </div>
+            <div class="flex flex-col gap-8 w-10/12 mt-3 mb-10 mx-auto">
+                <h1 class="text-2xl text-white mr-auto w-max sacramento">Rayhan furran</h1>
+                <h1 class="text-2xl text-white ml-auto w-max sacramento">Rayhan furran</h1>
+            </div>
+            <div class="w-10/12 mx-auto border-2 border-secondary2 flex flex-col gap-9 p-5 mb-9 text-center text-white rounded-xl">
+                <p class="text-sm font-medium">Kepada Yth</p>
+                <p class="text-base font-semibold">Sri mulyani</p>
+            </div>
+            <div class="w-max mx-auto">
+                <a href="/main.html" class="bg-white w-max text-primary font-medium text-sm rounded-xl mx-auto text-center px-3.5 py-2.5">Buka undangan</a>
+            </div>
+        </div>
+    </body>
+</html>
