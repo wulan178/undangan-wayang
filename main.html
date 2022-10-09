@@ -23,8 +23,36 @@
                 },
             };
         </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".slider").click(function () {
+                    $("#cover").slideUp();
+                });
+            });
+        </script>
     </head>
     <body>
+        <div class="w-screen h-screen max-h-screen m-0 overflow-hidden bg-primary" id="cover">
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
+            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180" />
+
+            <div class="mx-auto w-max pt-12">
+                <img src="./assets/img/wayang.svg" alt="logo" />
+            </div>
+            <div class="flex flex-col gap-6 w-9/12 mt-3 mb-8 mx-auto">
+                <h1 class="text-2xl text-white mr-auto w-max sacramento">Rayhan furran</h1>
+                <h1 class="text-2xl text-white ml-auto w-max sacramento">Rayhan furran</h1>
+            </div>
+            <div class="w-10/12 mx-auto border-2 border-secondary2 flex flex-col gap-8 p-5 mb-10 text-center text-white rounded-xl">
+                <p class="text-sm font-medium">Kepada Yth</p>
+                <p class="text-base font-semibold">Sri mulyani</p>
+            </div>
+            <div class="w-max mx-auto slider bg-white w-max text-primary font-medium text-sm rounded-xl mx-auto text-center px-3.5 py-2.5">Buka undangan</div>
+        </div>
+
         <section class="h-[100vh] relative flex flex-col">
             <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
             <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
@@ -316,10 +344,10 @@
             <h4 class="text-xl text-white text-center mx-auto font-medium w-max mb-5">Copyright <span class="font-bold">OurDate.id</span> © 2021 <br />All Rights Reserved</h4>
             <div class="flex items-center gap-6 justify-center">
                 <a href="">
-                    <img src="./assets/img/instagram.svg" alt="instagram">
+                    <img src="./assets/img/instagram.svg" alt="instagram" />
                 </a>
                 <a href="">
-                    <img src="./assets/img/whatsapp.svg" alt="whatsapp">
+                    <img src="./assets/img/whatsapp.svg" alt="whatsapp" />
                 </a>
             </div>
         </section>

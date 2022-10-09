@@ -16,3 +16,7 @@ font-family: 'Sacramento', cursive;
 .ruthie {
     font-family: 'Ruthie', cursive;
 }
+
+.slider {
+	transition: .4s ease-in-out;
+}
