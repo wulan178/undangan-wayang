@@ -27,13 +27,14 @@
         <script>
             $(document).ready(function () {
                 $(".slider").click(function () {
-                    $("#cover").slideUp();
+                    $("#cover").slideUp("slow");
+                    $("#content").show();
                 });
             });
         </script>
     </head>
     <body>
-        <div class="w-screen h-screen max-h-screen m-0 overflow-hidden bg-primary" id="cover">
+        <div class="relative w-screen h-screen max-h-screen m-0 overflow-hidden bg-primary" id="cover">
             <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
             <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
             <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
@@ -50,306 +51,309 @@
                 <p class="text-sm font-medium">Kepada Yth</p>
                 <p class="text-base font-semibold">Sri mulyani</p>
             </div>
-            <div class="w-max mx-auto slider bg-white w-max text-primary font-medium text-sm rounded-xl mx-auto text-center px-3.5 py-2.5">Buka undangan</div>
-        </div>
-
-        <section class="h-[100vh] relative flex flex-col">
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180" />
-
-            <div class="mx-auto w-max pt-16">
-                <img src="./assets/img/wayang.svg" alt="logo" />
-            </div>
-            <div class="flex flex-col gap-8 w-9/12 mt-3 mb-12 mx-auto">
-                <h1 class="text-2xl text-white mr-auto w-max sacramento">Rayhan furran</h1>
-                <h1 class="text-2xl text-white ml-auto w-max sacramento">Rayhan furran</h1>
-            </div>
-            <div class="grid grid-cols-4 gap-6 mx-auto mb-4 w-10/12">
-                <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
-                    <span>10</span>
-                </div>
-                <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
-                    <span>7 </span>
-                </div>
-                <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
-                    <span>33</span>
-                </div>
-                <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
-                    <span>16</span>
-                </div>
-            </div>
-            <div class="mx-auto w-8/12 flex items-center gap-4 justify-center">
-                <hr class="border-2 border-secondary2 bg-secondary2 w-full" />
-                <p class="text-sm font-bold text-white text-center">Wedding</p>
-                <hr class="border-2 border-secondary2 bg-secondary2 w-full" />
-            </div>
-        </section>
-
-        <section class="py-16 relative">
-            <div class="h-[328px] w-[225px] relative mx-auto">
-                <img src="./assets/img/frame.svg" class="absolute w-full h-full z-10 -mt-3" alt="frame" />
-                <div class="h-[304px] w-[213px] mx-auto relative overflow-hidden -z-10">
-                    <img src="./assets/img/img1.png" class="absolute w-full h-full" alt="foto" />
-                </div>
-            </div>
-            <h1 class="text-[41px] text-center mt-4 text-white leading-none sacramento">Rayhan furran</h1>
-            <h1 class="text-5xl font-bold text-white text-center my-11">&</h1>
-            <div class="h-[328px] w-[225px] relative mx-auto">
-                <img src="./assets/img/frame.svg" class="absolute w-full h-full z-10 -mt-3" alt="frame" />
-                <div class="h-[304px] w-[213px] mx-auto relative overflow-hidden bg-red -z-10">
-                    <img src="./assets/img/img2.png" class="absolute w-full h-full" alt="foto" />
-                </div>
-            </div>
-            <h1 class="text-[41px] text-center mt-4 text-white leading-none mb-32 sacramento">Rayhan furran</h1>
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
-            <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
-            </div>
-        </section>
-
-        <section class="bg-white px-4 w-screen relative z-10 pt-10 pb-7 -mt-1">
-            <p class="text-primary text-center mb-6">
-                “Dan diantara ayat-ayat-Nya ialah diciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan dijadikan-Nya diantaramu mawadah dan rahmah.
-                Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
-            </p>
-            <p class="text-xs font-medium text-white bg-primary px-3 py-2 text-center mx-auto w-max">(QS. Ar-Ruum:21)</p>
-        </section>
-
-        <section class="relative overflow-hidden">
-            <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
-            </div>
-            <h1 class="text-4xl font-bold text-center text-white mx-auto py-32">Save the date</h1>
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
-            <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
-            </div>
-        </section>
-
-        <section class="relative w-screen bg-white py-8">
-            <img src="./assets/img/bg.svg" class="absolute w-full h-full z-10 -mt-8" alt="background" />
-            <div class="relative flex flex-col w-full h-full z-20">
-                <h1 class="text-primary text-center text-5xl sacramento">Akad nikah</h1>
-                <div class="relative mx-auto border rotate-45 border-primary w-[112px] h-[112px] flex items-center justify-center my-10">
-                    <h1 class="text-primary font-bold text-center text-4xl absolute -rotate-45 -translate-y-1/2 top-1/2">31</h1>
-                </div>
-                <h4 class="text-2xl font-bold mx-auto text-center mb-1">Jumat</h4>
-                <h4 class="text-lg mx-auto text-center mb-5">April</h4>
-                <h5 class="px-9 py-2 rounded-xl bg-primary text-center text-lg font-medium text-white w-max mx-auto mb-6">09:00 - 12:00</h5>
-                <div class="border border-primary rounded-xl px-12 py-4 flex flex-col gap-8 w-11/12 mx-auto">
-                    <p class="text-primary text-sm font-medium text-center">Bertempat di</p>
-                    <p class="text-primary text-xs font-medium text-center">Jl. Terogong Raya No.17, RT.12/RW.10, Cilandak DKI Jakarta 12430</p>
-                </div>
-            </div>
-        </section>
-        <div class="bg-white w-screen">
-            <div class="flex justify-between gap-1 h-14 w-screen">
-                <div class="bg-primary w-1/5"></div>
-                <div class="bg-primary w-3/5"></div>
-                <div class="bg-primary w-1/5"></div>
+            <div class="w-max mx-auto slider bg-white flex flex-col justify-center w-max rounded-full animate-bounce mx-auto text-center p-2 items-center">
+                <img src="./assets/img/up-arrows.png" alt="arrow">
             </div>
         </div>
-
-        <section class="relative w-screen bg-white py-8">
-            <img src="./assets/img/bg.svg" class="absolute w-full h-full z-10 -mt-8" alt="background" />
-            <div class="relative flex flex-col w-full h-full z-20">
-                <h1 class="text-primary text-center text-5xl sacramento">Resepsi</h1>
-                <div class="relative mx-auto border rotate-45 border-primary w-[112px] h-[112px] flex items-center justify-center my-10">
-                    <h1 class="text-primary font-bold text-center text-4xl absolute -rotate-45 -translate-y-1/2 top-1/2">31</h1>
-                </div>
-                <h4 class="text-2xl font-bold mx-auto text-center mb-1">Jumat</h4>
-                <h4 class="text-lg mx-auto text-center mb-5">April</h4>
-                <h5 class="px-9 py-2 rounded-xl bg-primary text-center text-lg font-medium text-white w-max mx-auto mb-6">12:00 - 18:00</h5>
-                <div class="border border-primary rounded-xl px-12 py-4 flex flex-col gap-8 w-11/12 mx-auto">
-                    <p class="text-primary text-sm font-medium text-center">Bertempat di</p>
-                    <p class="text-primary text-xs font-medium text-center">Jl. Terogong Raya No.17, RT.12/RW.10, Cilandak DKI Jakarta 12430</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="relative overflow-hidden">
-            <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
-            </div>
-            <h1 class="text-4xl font-bold text-center text-white mx-auto py-32">Location</h1>
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
-            <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
-            <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
-            </div>
-        </section>
-
-        <section class="relative bg-white py-5 h-max w-screen flex flex-col gap-4">
-            <div class="relative w-full h-full rounded-xl min-h-[285px] w-11/12 mx-auto">
-                <img src="./assets/img/map.png" alt="map" />
-            </div>
-            <p class="text-xs font-medium text-center mx-auto w-11/12">Jl. Cideng jaya no.33 Kec. kedawung, Kab. Cirebon, Jawa barat</p>
-        </section>
-
-        <section class="relative pt-8">
-            <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
-                <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
-            </div>
-            <h1 class="text-base font-semibold bg-white rounded-xl text-center text-primary mx-auto w-max px-6 py-2">Open map</h1>
-            <h1 class="mt-14 text-center text-white font-bold mx-auto w-9/12 text-4xl mb-9">Protokol kesehatan</h1>
-            <div class="grid grid-cols-3 gap-5 mx-auto w-11/12 pb-14">
-                <div class="px-3.5 py-7 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
-                    <img src="./assets/img/washing-hands.svg" alt="image" />
-                    <p class="text-[8px] text-primary text-center">Mencuci tangan</p>
-                </div>
-                <div class="px-3.5 pb-7 pt-5 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
-                    <img src="./assets/img/mask-character.svg" width="35" height="60" alt="image" />
-                    <p class="text-[8px] text-primary text-center">Gunakan masker</p>
-                </div>
-                <div class="px-3.5 pb-7 pt-8 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
-                    <img src="./assets/img/social-distance.svg" alt="image" />
-                    <p class="text-[8px] text-primary text-center mt-auto">Jaga jarak</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="w-screen relative overflow-hidden">
-            <div class="w-11/12 mx-auto">
-                <h1 class="text-center text-white font-bold mx-auto w-10/12 text-4xl mb-12">Our Love Story</h1>
-            </div>
-            <div class="flex gap-3 mb-14 w-11/12 mx-auto">
-                <div class="flex flex-col items-center">
-                    <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
-                    <hr class="h-[167px] w-[3px] bg-white border-white" />
-                    <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
-                    <hr class="h-[167px] w-[3px] bg-white border-white" />
-                    <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
-                    <hr class="h-[167px] w-[3px] bg-white border-white" />
-                    <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
-                </div>
-                <div class="flex flex-col gap-20 pt-9 w-full">
-                    <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
-                        <div>
-                            <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
-                            <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
-                                <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
-                            </div>
-                        </div>
-                        <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
-                    </div>
-                    <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
-                        <div>
-                            <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
-                            <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
-                                <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
-                            </div>
-                        </div>
-                        <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
-                    </div>
-                    <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
-                        <div>
-                            <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
-                            <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
-                                <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
-                            </div>
-                        </div>
-                        <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
-                    </div>
-                    <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
-                        <div>
-                            <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
-                            <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden overflow-hidden">
-                                <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" class="w-full h-full" alt="img" />
-                            </div>
-                        </div>
-                        <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="relative">
-            <h1 class="text-center text-white font-bold mx-auto w-9/12 text-4xl mb-32">Gallery</h1>
-            <div class="relative">
+        <div class="m-0 p-0 hidden" id="content">
+            <section class="h-[100vh] relative flex flex-col">
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 left-0" />
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute top-0 right-0 rotate-90" />
                 <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
                 <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180" />
+
+                <div class="mx-auto w-max pt-16">
+                    <img src="./assets/img/wayang.svg" alt="logo" />
+                </div>
+                <div class="flex flex-col gap-8 w-9/12 mt-3 mb-12 mx-auto">
+                    <h1 class="text-2xl text-white mr-auto w-max sacramento">Rayhan furran</h1>
+                    <h1 class="text-2xl text-white ml-auto w-max sacramento">Rayhan furran</h1>
+                </div>
+                <div class="grid grid-cols-4 gap-6 mx-auto mb-4 w-10/12">
+                    <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
+                        <span>10</span>
+                    </div>
+                    <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
+                        <span>7 </span>
+                    </div>
+                    <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
+                        <span>33</span>
+                    </div>
+                    <div class="bg-white p-2 text-primary text-2xl rounded-md font-semibold flex items-center justify-center">
+                        <span>16</span>
+                    </div>
+                </div>
+                <div class="mx-auto w-8/12 flex items-center gap-4 justify-center">
+                    <hr class="border-2 border-secondary2 bg-secondary2 w-full" />
+                    <p class="text-sm font-bold text-white text-center">Wedding</p>
+                    <hr class="border-2 border-secondary2 bg-secondary2 w-full" />
+                </div>
+            </section>
+
+            <section class="py-16 relative">
+                <div class="h-[328px] w-[225px] relative mx-auto">
+                    <img src="./assets/img/frame.svg" class="absolute w-full h-full z-10 -mt-3" alt="frame" />
+                    <div class="h-[304px] w-[213px] mx-auto relative overflow-hidden -z-10">
+                        <img src="./assets/img/img1.png" class="absolute w-full h-full" alt="foto" />
+                    </div>
+                </div>
+                <h1 class="text-[41px] text-center mt-4 text-white leading-none sacramento">Rayhan furran</h1>
+                <h1 class="text-5xl font-bold text-white text-center my-11">&</h1>
+                <div class="h-[328px] w-[225px] relative mx-auto">
+                    <img src="./assets/img/frame.svg" class="absolute w-full h-full z-10 -mt-3" alt="frame" />
+                    <div class="h-[304px] w-[213px] mx-auto relative overflow-hidden bg-red -z-10">
+                        <img src="./assets/img/img2.png" class="absolute w-full h-full" alt="foto" />
+                    </div>
+                </div>
+                <h1 class="text-[41px] text-center mt-4 text-white leading-none mb-32 sacramento">Rayhan furran</h1>
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
                 <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
                     <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
                 </div>
-            </div>
-            <div class="bg-white w-screen px-6 py-8 relative">
-                <img src="./assets/img/hands.png" class="mb-5 rounded-xl w-full" width="326" height="242" alt="img" />
-                <div class="grid grid-cols-4 gap-5">
-                    <div class="w-16 h-16 rounded-xl overflow-hidden">
-                        <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
-                    </div>
-                    <div class="w-16 h-16 rounded-xl overflow-hidden">
-                        <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
-                    </div>
-                    <div class="w-16 h-16 rounded-xl overflow-hidden">
-                        <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
-                    </div>
-                    <div class="w-16 h-16 rounded-xl overflow-hidden">
-                        <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
-                    </div>
-                </div>
-                <div class="bg-primary relative">
-                    <div class="absolute -translate-x-1/2 left-1/2 scale-125 -z-10 -top-12 pb-20">
-                        <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="relative mt-28 overflow-hidden bg-white pt-9 pb-6 w-screen">
-            <div class="absolute -top-7 w-screen">
-                <img src="./assets/img/wayang2.svg" class="w-screen min-w-screen" alt="bg" />
-            </div>
-            <h1 class="text-4xl text-primary font-bold mb-3 text-center">Wedding gift</h1>
-            <p class="text-primary text-xs text-center w-9/12 mx-auto">Jika temen2 berkenan untuk memberi kado, Kami juga menerima dalam bentuk digital. Terima kasih</p>
-            <div class="flex flex-col items-center gap-10 mt-10">
-                <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
-                    <img src="./assets/img/bca.svg" alt="logo" />
-                    <div class="w-32 h-32 mt-6 mb-5">
-                        <img src="./assets/img/barcodes.svg" alt="barcode" />
-                    </div>
-                    <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
-                        <p class="text-sm font-bold">2371237821371273</p>
-                        <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
-                    </div>
-                </div>
-                <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
-                    <img src="./assets/img/mandiri.svg" alt="logo" />
-                    <div class="w-32 h-32 mt-6 mb-5">
-                        <img src="./assets/img/barcodes.svg" alt="barcode" />
-                    </div>
-                    <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
-                        <p class="text-sm font-bold">2371237821371273</p>
-                        <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
-                    </div>
-                </div>
-                <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
-                    <img src="./assets/img/ovo.svg" alt="logo" />
-                    <div class="w-32 h-32 mt-6 mb-5">
-                        <img src="./assets/img/barcodes.svg" alt="barcode" />
-                    </div>
-                    <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
-                        <p class="text-sm font-bold">2371237821371273</p>
-                        <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
-                    </div>
-                </div>
-            </div>
-        </section>
+            <section class="bg-white px-4 w-screen relative z-10 pt-10 pb-7 -mt-1">
+                <p class="text-primary text-center mb-6">
+                    “Dan diantara ayat-ayat-Nya ialah diciptakan untukmu istri-istri dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan dijadikan-Nya diantaramu mawadah dan rahmah.
+                    Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir”
+                </p>
+                <p class="text-xs font-medium text-white bg-primary px-3 py-2 text-center mx-auto w-max">(QS. Ar-Ruum:21)</p>
+            </section>
 
-        <section class="w-screen py-16">
-            <h4 class="text-xl text-white text-center mx-auto font-medium w-max mb-5">Copyright <span class="font-bold">OurDate.id</span> © 2021 <br />All Rights Reserved</h4>
-            <div class="flex items-center gap-6 justify-center">
-                <a href="">
-                    <img src="./assets/img/instagram.svg" alt="instagram" />
-                </a>
-                <a href="">
-                    <img src="./assets/img/whatsapp.svg" alt="whatsapp" />
-                </a>
+            <section class="relative overflow-hidden">
+                <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
+                    <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
+                </div>
+                <h1 class="text-4xl font-bold text-center text-white mx-auto py-32">Save the date</h1>
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
+                <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
+                    <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
+                </div>
+            </section>
+
+            <section class="relative w-screen bg-white py-8">
+                <img src="./assets/img/bg.svg" class="absolute w-full h-full z-10 -mt-8" alt="background" />
+                <div class="relative flex flex-col w-full h-full z-20">
+                    <h1 class="text-primary text-center text-5xl sacramento">Akad nikah</h1>
+                    <div class="relative mx-auto border rotate-45 border-primary w-[112px] h-[112px] flex items-center justify-center my-10">
+                        <h1 class="text-primary font-bold text-center text-4xl absolute -rotate-45 -translate-y-1/2 top-1/2">31</h1>
+                    </div>
+                    <h4 class="text-2xl font-bold mx-auto text-center mb-1">Jumat</h4>
+                    <h4 class="text-lg mx-auto text-center mb-5">April</h4>
+                    <h5 class="px-9 py-2 rounded-xl bg-primary text-center text-lg font-medium text-white w-max mx-auto mb-6">09:00 - 12:00</h5>
+                    <div class="border border-primary rounded-xl px-12 py-4 flex flex-col gap-8 w-11/12 mx-auto">
+                        <p class="text-primary text-sm font-medium text-center">Bertempat di</p>
+                        <p class="text-primary text-xs font-medium text-center">Jl. Terogong Raya No.17, RT.12/RW.10, Cilandak DKI Jakarta 12430</p>
+                    </div>
+                </div>
+            </section>
+            <div class="bg-white w-screen">
+                <div class="flex justify-between gap-1 h-14 w-screen">
+                    <div class="bg-primary w-1/5"></div>
+                    <div class="bg-primary w-3/5"></div>
+                    <div class="bg-primary w-1/5"></div>
+                </div>
             </div>
-        </section>
+
+            <section class="relative w-screen bg-white py-8">
+                <img src="./assets/img/bg.svg" class="absolute w-full h-full z-10 -mt-8" alt="background" />
+                <div class="relative flex flex-col w-full h-full z-20">
+                    <h1 class="text-primary text-center text-5xl sacramento">Resepsi</h1>
+                    <div class="relative mx-auto border rotate-45 border-primary w-[112px] h-[112px] flex items-center justify-center my-10">
+                        <h1 class="text-primary font-bold text-center text-4xl absolute -rotate-45 -translate-y-1/2 top-1/2">31</h1>
+                    </div>
+                    <h4 class="text-2xl font-bold mx-auto text-center mb-1">Jumat</h4>
+                    <h4 class="text-lg mx-auto text-center mb-5">April</h4>
+                    <h5 class="px-9 py-2 rounded-xl bg-primary text-center text-lg font-medium text-white w-max mx-auto mb-6">12:00 - 18:00</h5>
+                    <div class="border border-primary rounded-xl px-12 py-4 flex flex-col gap-8 w-11/12 mx-auto">
+                        <p class="text-primary text-sm font-medium text-center">Bertempat di</p>
+                        <p class="text-primary text-xs font-medium text-center">Jl. Terogong Raya No.17, RT.12/RW.10, Cilandak DKI Jakarta 12430</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative overflow-hidden">
+                <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
+                    <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
+                </div>
+                <h1 class="text-4xl font-bold text-center text-white mx-auto py-32">Location</h1>
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90 mt-16" />
+                <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180 mt-16" />
+                <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
+                    <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
+                </div>
+            </section>
+
+            <section class="relative bg-white py-5 h-max w-screen flex flex-col gap-4">
+                <div class="relative w-full h-full rounded-xl min-h-[285px] w-11/12 mx-auto">
+                    <img src="./assets/img/map.png" alt="map" />
+                </div>
+                <p class="text-xs font-medium text-center mx-auto w-11/12">Jl. Cideng jaya no.33 Kec. kedawung, Kab. Cirebon, Jawa barat</p>
+            </section>
+
+            <section class="relative pt-8">
+                <div class="absolute -translate-x-1/2 left-1/2 -top-28 -mt-1 scale-125 -z-10">
+                    <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
+                </div>
+                <h1 class="text-base font-semibold bg-white rounded-xl text-center text-primary mx-auto w-max px-6 py-2">Open map</h1>
+                <h1 class="mt-14 text-center text-white font-bold mx-auto w-9/12 text-4xl mb-9">Protokol kesehatan</h1>
+                <div class="grid grid-cols-3 gap-5 mx-auto w-11/12 pb-14">
+                    <div class="px-3.5 py-7 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
+                        <img src="./assets/img/washing-hands.svg" alt="image" />
+                        <p class="text-[8px] text-primary text-center">Mencuci tangan</p>
+                    </div>
+                    <div class="px-3.5 pb-7 pt-5 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
+                        <img src="./assets/img/mask-character.svg" width="35" height="60" alt="image" />
+                        <p class="text-[8px] text-primary text-center">Gunakan masker</p>
+                    </div>
+                    <div class="px-3.5 pb-7 pt-8 bg-[#D9D9D9] w-full rounded-xl flex flex-col gap-9 items-center justify-center">
+                        <img src="./assets/img/social-distance.svg" alt="image" />
+                        <p class="text-[8px] text-primary text-center mt-auto">Jaga jarak</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-screen relative overflow-hidden">
+                <div class="w-11/12 mx-auto">
+                    <h1 class="text-center text-white font-bold mx-auto w-10/12 text-4xl mb-12">Our Love Story</h1>
+                </div>
+                <div class="flex gap-3 mb-14 w-11/12 mx-auto">
+                    <div class="flex flex-col items-center">
+                        <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
+                        <hr class="h-[167px] w-[3px] bg-white border-white" />
+                        <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
+                        <hr class="h-[167px] w-[3px] bg-white border-white" />
+                        <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
+                        <hr class="h-[167px] w-[3px] bg-white border-white" />
+                        <img src="./assets/img/pinned.svg" width="36" height="36" alt="pin" />
+                    </div>
+                    <div class="flex flex-col gap-20 pt-9 w-full">
+                        <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
+                            <div>
+                                <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
+                                <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
+                                    <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
+                                </div>
+                            </div>
+                            <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
+                        </div>
+                        <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
+                            <div>
+                                <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
+                                <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
+                                    <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
+                                </div>
+                            </div>
+                            <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
+                        </div>
+                        <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
+                            <div>
+                                <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
+                                <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden">
+                                    <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" alt="img" />
+                                </div>
+                            </div>
+                            <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
+                        </div>
+                        <div class="bg-white px-3.5 py-4 rounded-3xl flex items-center gap-3">
+                            <div>
+                                <p class="text-primary text-sm mb-2 w-max ruthie">18 February</p>
+                                <div class="w-14 h-14 rounded-xl border-2 border-primary overflow-hidden overflow-hidden">
+                                    <img src="./assets/img/hands.png" class="w-full h-full min-h-[56px] min-w-[56px] scale-110" class="w-full h-full" alt="img" />
+                                </div>
+                            </div>
+                            <p class="text-primary text-xs">Pada waktu itu ada pria yang menanyakan alamat, lalu akhirnya di situlah cinta pada pandangan pertama datang.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative">
+                <h1 class="text-center text-white font-bold mx-auto w-9/12 text-4xl mb-32">Gallery</h1>
+                <div class="relative">
+                    <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 left-0 -rotate-90" />
+                    <img src="./assets/img/corner-gold.svg" alt="decoration" class="absolute -bottom-1 right-0 -rotate-180" />
+                    <div class="absolute -translate-x-1/2 left-1/2 -bottom-28 scale-125 -z-10">
+                        <img src="./assets/img/wayang-bg.svg" class="w-full h-full" alt="decoration" />
+                    </div>
+                </div>
+                <div class="bg-white w-screen px-6 py-8 relative">
+                    <img src="./assets/img/hands.png" class="mb-5 rounded-xl w-full" width="326" height="242" alt="img" />
+                    <div class="grid grid-cols-4 gap-5">
+                        <div class="w-16 h-16 rounded-xl overflow-hidden">
+                            <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
+                        </div>
+                        <div class="w-16 h-16 rounded-xl overflow-hidden">
+                            <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
+                        </div>
+                        <div class="w-16 h-16 rounded-xl overflow-hidden">
+                            <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
+                        </div>
+                        <div class="w-16 h-16 rounded-xl overflow-hidden">
+                            <img src="./assets/img/hands.png" class="w-full h-full scale-110" alt="img" />
+                        </div>
+                    </div>
+                    <div class="bg-primary relative">
+                        <div class="absolute -translate-x-1/2 left-1/2 scale-125 -z-10 -top-12 pb-20">
+                            <img src="./assets/img/wayang-bg.svg" class="w-full h-full rotate-180" alt="decoration" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative mt-28 overflow-hidden bg-white pt-9 pb-6 w-screen">
+                <div class="absolute -top-7 w-screen">
+                    <img src="./assets/img/wayang2.svg" class="w-screen min-w-screen" alt="bg" />
+                </div>
+                <h1 class="text-4xl text-primary font-bold mb-3 text-center">Wedding gift</h1>
+                <p class="text-primary text-xs text-center w-9/12 mx-auto">Jika temen2 berkenan untuk memberi kado, Kami juga menerima dalam bentuk digital. Terima kasih</p>
+                <div class="flex flex-col items-center gap-10 mt-10">
+                    <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
+                        <img src="./assets/img/bca.svg" alt="logo" />
+                        <div class="w-32 h-32 mt-6 mb-5">
+                            <img src="./assets/img/barcodes.svg" alt="barcode" />
+                        </div>
+                        <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
+                            <p class="text-sm font-bold">2371237821371273</p>
+                            <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
+                        </div>
+                    </div>
+                    <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
+                        <img src="./assets/img/mandiri.svg" alt="logo" />
+                        <div class="w-32 h-32 mt-6 mb-5">
+                            <img src="./assets/img/barcodes.svg" alt="barcode" />
+                        </div>
+                        <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
+                            <p class="text-sm font-bold">2371237821371273</p>
+                            <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
+                        </div>
+                    </div>
+                    <div class="py-5 px-16 border-2 mx-auto w-max border-primary rounded-xl flex flex-col items-center">
+                        <img src="./assets/img/ovo.svg" alt="logo" />
+                        <div class="w-32 h-32 mt-6 mb-5">
+                            <img src="./assets/img/barcodes.svg" alt="barcode" />
+                        </div>
+                        <div class="border border-primary rounded-xl w-max flex items-center gap-7 justify-between p-2">
+                            <p class="text-sm font-bold">2371237821371273</p>
+                            <img src="./assets/img/clipboard.svg" width="30" height="30" alt="clipboard" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="w-screen py-16">
+                <h4 class="text-xl text-white text-center mx-auto font-medium w-max mb-5">Copyright <span class="font-bold">OurDate.id</span> © 2021 <br />All Rights Reserved</h4>
+                <div class="flex items-center gap-6 justify-center">
+                    <a href="">
+                        <img src="./assets/img/instagram.svg" alt="instagram" />
+                    </a>
+                    <a href="">
+                        <img src="./assets/img/whatsapp.svg" alt="whatsapp" />
+                    </a>
+                </div>
+            </section>
+        </div>
     </body>
 </html>

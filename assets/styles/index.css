@@ -17,6 +17,9 @@ font-family: 'Sacramento', cursive;
     font-family: 'Ruthie', cursive;
 }
 
-.slider {
-	transition: .4s ease-in-out;
+#cover {
+    overflow-y: hidden;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
